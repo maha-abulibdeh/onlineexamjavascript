@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body class="result">
+      <div class="container">
+        <h1 id="show" class="text-center"></h1>
+        <table class="table table-light table-bordered">
+            <thead>
+              <tr class="table-active">
+                <th scope="col">#</th>
+                <th scope="col">correct answer</th>
+                <th scope="col">your answer</th>
+             
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-info">
+                <th scope="row">1</th>
+                <td >script</td>
+                <td id="tdt1"></td>
+               
+              </tr>
+              <tr class="table-active">
+                <th scope="row">2</th>
+                <td>both the head section and the body section correct</td>
+                <td id="tdt2"></td>
+                
+              </tr>
+              <tr class="table-info">
+                <th scope="row">3</th>
+                <td>False</td>
+                <td id="tdt3"></td>
+              
+              </tr>
+              <tr class="table-active">
+                <th scope="row">4</th>
+                <td>function myfunction()</td>
+                <td id="tdt4"></td>
+              
+              </tr>
+
+              <tr class="table-info">
+                <th scope="row">5</th>
+                <td> myfunction()</td>
+                <td id="tdt5"></td>
+              
+              </tr>
+
+              <tr class="table-active">
+                <th scope="row">6</th>
+                <td> if (i==5)</td>
+                <td id="tdt6"></td>
+              
+              </tr>
+
+              <tr class="table-info">
+                <th scope="row">7</th>
+                <td> Math.max(x, y)</td>
+                <td id="tdt7"></td>
+              
+              </tr>
+
+              <tr class="table-active">
+                <th scope="row">8</th>
+                <td>true</td>
+                <td id="tdt8">no</td>
+              
+              </tr>
+              <tr class="table-info">
+                <th scope="row">9</th>
+                <td>onclick</td>
+                <td id="tdt9"></td>
+              
+              </tr>
+
+              <tr class="table-active">
+                <th scope="row">10</th>
+                <td>yes</td>
+                <td id="tdt10"></td>
+              
+              </tr>
+
+            </tbody>
+          </table>
+          <a href="loginpage.html"> <button type="button" class="btn btn-secondary btnresult  ">Go back</button></a>  
+
+        </div>
+
+        <script>
+   
+
+        var answr1=localStorage.getItem("ansr1");
+        var answr2=localStorage.getItem("ansr2");
+        var answr3=localStorage.getItem("ansr3");
+        var answr4=localStorage.getItem("ansr4");
+        var answr5=localStorage.getItem("ansr5");
+        var answr6=localStorage.getItem("ansr6");
+        var answr7=localStorage.getItem("ansr7");
+        var answr8=localStorage.getItem("ansr8");
+        var answr9=localStorage.getItem("ansr9");
+        var answr10=localStorage.getItem("ansr10");
+
+        
+        var score3=localStorage.getItem('result3');
+        document.getElementById('show').innerHTML="your score is"+ score3;
+        document.getElementById('tdt1').innerHTML=answr1;
+        document.getElementById('tdt2').innerHTML=answr2;
+        document.getElementById('tdt3').innerHTML=answr3;
+        document.getElementById('tdt4').innerHTML=answr4;
+        document.getElementById('tdt5').innerHTML=answr5;
+        document.getElementById('tdt6').innerHTML=answr6;
+        document.getElementById('tdt7').innerHTML=answr7;
+        document.getElementById('tdt8').innerHTML=answr8;
+        document.getElementById('tdt9').innerHTML=answr9;
+        document.getElementById('tdt10').innerHTML=answr10;
+
+        localStorage.removeItem(score3);
+        localStorage.removeItem(result3);
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body class="result">
+      <div class="container">
+        <h1 id="show" class="text-center"> </h1>
+        <table class="table table-light table-bordered">
+            <thead>
+              <tr class="table-active">
+                <th scope="col">#</th>
+                <th scope="col">correct answer</th>
+                <th scope="col">your answer</th>
+             
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-info">
+                <th scope="row">1</th>
+                <td >cascading style sheet</td>
+                <td id="tdd1"></td>
+               
+              </tr>
+              <tr class="table-active">
+                <th scope="row">2</th>
+                <td>a{text-decoration:none}</td>
+                <td id="tdd2"></td>
+                
+              </tr>
+              <tr class="table-info">
+                <th scope="row">3</th>
+                <td>in the head section</td>
+                <td id="tdd3"></td>
+              
+              </tr>
+              <tr class="table-active">
+                <th scope="row">4</th>
+                <td>style</td>
+                <td id="tdd4"></td>
+              
+              </tr>
+
+              <tr class="table-info">
+                <th scope="row">5</th>
+                <td> class</td>
+                <td id="tdd5"></td>
+              
+              </tr>
+
+              <tr class="table-active">
+                <th scope="row">6</th>
+                <td> body{color:black;}</td>
+                <td id="tdd6"></td>
+              
+              </tr>
+
+              <tr class="table-info">
+                <th scope="row">7</th>
+                <td> /*this is the comment */</td>
+                <td id="tdd7"></td>
+              
+              </tr>
+
+              <tr class="table-active">
+                <th scope="row">8</th>
+                <td>background-color</td>
+                <td id="tdd8">no</td>
+              
+              </tr>
+              <tr class="table-info">
+                <th scope="row">9</th>
+                <td>h1{backround-color:#FFFFFF}</td>
+                <td id="tdd9"></td>
+              
+              </tr>
+
+              <tr class="table-active">
+                <th scope="row">10</th>
+                <td>color</td>
+                <td id="tdd10"></td>
+              
+              </tr>
+
+            </tbody>
+          </table>
+          <a href="donecss3.html"> <button type="button" class="btn btn-secondary btnresult  ">Go back</button></a>  
+
+        <script>
+   
+
+        var answr1=localStorage.getItem("anse1");
+        var answr2=localStorage.getItem("anse2");
+        var answr3=localStorage.getItem("anse3");
+        var answr4=localStorage.getItem("anse4");
+        var answr5=localStorage.getItem("anse5");
+        var answr6=localStorage.getItem("anse6");
+        var answr7=localStorage.getItem("anse7");
+        var answr8=localStorage.getItem("anse8");
+        var answr9=localStorage.getItem("anse9");
+        var answr10=localStorage.getItem("anse10");
+
+        
+        var score2=localStorage.getItem('result2');
+        document.getElementById('show').innerHTML="your score is"+ score2;
+        document.getElementById('tdd1').innerHTML=answr1;
+        document.getElementById('tdd2').innerHTML=answr2;
+        document.getElementById('tdd3').innerHTML=answr3;
+        document.getElementById('tdd4').innerHTML=answr4;
+        document.getElementById('tdd5').innerHTML=answr5;
+        document.getElementById('tdd6').innerHTML=answr6;
+        document.getElementById('tdd7').innerHTML=answr7;
+        document.getElementById('tdd8').innerHTML=answr8;
+        document.getElementById('tdd9').innerHTML=answr9;
+        document.getElementById('tdd10').innerHTML=answr10;
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

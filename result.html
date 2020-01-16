@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body class="result">
+
+        <div class="container">
+        <h3 id="show" class="text-center"></h3>
+        <table class="table table-light table-bordered" >
+            <thead>
+              <tr class="table-active">
+                <th  scope="col">#</th>
+                <th scope="col">correct answer</th>
+                <th scope="col">your answer</th>
+             
+              </tr>
+            </thead>
+            <tbody>
+              <tr  class="table-info">
+                <th scope="row">1</th>
+                <td >hyper text markup language</td>
+                <td id="td1"></td>
+               
+              </tr>
+              <tr class="table-active">
+                <th scope="row">2</th>
+                <td>In the title bar</td>
+                <td id="td2"></td>
+                
+              </tr>
+              <tr  class="table-info">
+                <th scope="row">3</th>
+                <td>1-6</td>
+                <td id="td3"></td>
+              
+              </tr>
+              <tr class="table-active">
+                <th scope="row">4</th>
+                <td> Everything following will be a heading format</td>
+                <td id="td4"></td>
+              
+              </tr>
+
+              <tr class="table-info">
+                <th scope="row">5</th>
+                <td> br</td>
+                <td id="td5"></td>
+              
+              </tr>
+
+              <tr class="table-active">
+                <th scope="row">6</th>
+                <td> body</td>
+                <td id="td6"></td>
+              
+              </tr>
+
+              <tr class="table-info">
+                <th scope="row">7</th>
+                <td> no</td>
+                <td id="td7"></td>
+              
+              </tr>
+
+              <tr class="table-active">
+                <th scope="row">8</th>
+                <td>ul</td>
+                <td id="td8">no</td>
+              
+              </tr>
+              <tr class="table-info">
+                <th scope="row">9</th>
+                <td>a</td>
+                <td id="td9"></td>
+              
+              </tr>
+
+              <tr class="table-active">
+                <th scope="row">10</th>
+                <td>img src= “pic.jpg”</td>
+                <td id="td10"></td>
+              
+              </tr>
+
+            </tbody>
+          </table>
+        <a href="donehtml.html"> <button type="button" class="btn btn-secondary btnresult  ">Go back</button></a>  
+          
+        </div>
+          
+        <script>
+   
+
+        var answ1=localStorage.getItem("ans1");
+        var answ2=localStorage.getItem("ans2");
+        var answ3=localStorage.getItem("ans3");
+        var answ4=localStorage.getItem("ans4");
+        var answ5=localStorage.getItem("ans5");
+        var answ6=localStorage.getItem("ans6");
+        var answ7=localStorage.getItem("ans7");
+        var answ8=localStorage.getItem("ans8");
+        var answ9=localStorage.getItem("ans9");
+        var answ10=localStorage.getItem("ans10");
+
+        
+        var score=localStorage.getItem('result');
+        document.getElementById('show').innerHTML="your score is"+ score;
+        document.getElementById('td1').innerHTML=answ1;
+        document.getElementById('td2').innerHTML=answ2;
+        document.getElementById('td3').innerHTML=answ3;
+        document.getElementById('td4').innerHTML=answ4;
+        document.getElementById('td5').innerHTML=answ5;
+        document.getElementById('td6').innerHTML=answ6;
+        document.getElementById('td7').innerHTML=answ7;
+        document.getElementById('td8').innerHTML=answ8;
+        document.getElementById('td9').innerHTML=answ9;
+        document.getElementById('td10').innerHTML=answ10;
+
+        localStorage.removeItem(score);
+        localStorage.removeItem(result);
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
